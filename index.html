@@ -20,12 +20,17 @@
             }
         }
 
+        html {
+            height: --webkit-fill-available;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
             margin: 0;
+            overflow: hidden;
             background-color: var(--main-bg-color);
             color: var(--main-txt-color);
             font-family: "Funnel Display", sans-serif;
